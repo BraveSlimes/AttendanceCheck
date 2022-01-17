@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>출석체크</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <section class="wrapper">
+        <h1>사용법 HOW TO USE</h1>
+        <p>1. 오픈 카카오톡에서 대화를 내보낸 후, "--------------- 202X년 XX월 XX일 X요일 ---------------" 이라는 라인부터 그 다음 요일 라인 전까지를 따로 텍스트 파일로 만든다</p>
+        <p>2. 파일 선택을 누르고, 1번에서 가공한 텍스트 파일을 넣는다.</p>
+        <p>3. 추출된 텍스트 파일을 구글 스프레드시트 > 가져오기 > 업로드 > 구분자 유형 쉼표로 설정한다.</p>
+        <input type="file" onchange="loadFile(this.files[0])">
+        <p class="result">출력화면</p>
+        <p id="output">OUTPUT</p>
+    </section>
+</body>
+</html>
